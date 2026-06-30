@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+</head>
+<body>
+    <h1>Mi página web</h1>
+    {{ variable }}
+    {# ejemplo de comentario #}
+    <ul>
+        {% for elemento in navegacion %}
+        <!-- <li><a href="url">texto_url</a></li> -->
+        <li><a href="{{ elemento[0] }}">{{ elemento[1] }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
