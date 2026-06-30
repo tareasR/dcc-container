@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+</head>
+<body>
+    <h1>Empleados</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>correo</th>
+                <th>dirección</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for elemento in datos %}
+                <tr>
+                    <td>{{ elemento.name }}</td>
+                    <td>{{ elemento.email }}</td>
+                    <td>{{ elemento.address.street }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
